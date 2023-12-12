@@ -1,3 +1,7 @@
+const smsg = require('../messages/say-message');
+
+
+sayMessage = smsg.sayMessage;
 
 
 function sayHelloTo(name) {
@@ -5,3 +9,6 @@ function sayHelloTo(name) {
 }
 
 sayHelloTo("Woody");
+
+
+module.exports.sayHelloTo = sayHelloTo;

@@ -1,4 +1,6 @@
+const gmsg = require('./say-hello-to');
 
+sayHelloTo = gmsg.sayHelloTo;
 
 function giveMessageToMrsPotato(message) {
   sayHelloTo("Mrs. Potato");
@@ -6,3 +8,5 @@ function giveMessageToMrsPotato(message) {
 }
 
 giveMessageToMrsPotato("Hi Buzz");
+
+module.exports.giveMessageToMrsPotato = giveMessageToMrsPotato;
